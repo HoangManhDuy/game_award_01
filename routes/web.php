@@ -11,10 +11,24 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'GameController@home');
 
-// Route::get('Dai/du', function(){
-// 	echo 'toi làduy';
-// });
+Route::get('topgame', 'GameController@topgame');
+
+Route::get('toptype', 'GameController@toptype');
+
+Route::get('event', 'GameController@event');
+
+Route::get('search', 'GameController@search');
+
+Route::get('signin', 'GameController@signin');
+
+Route::get('account', 'GameController@account');
+
+Route::get('prize', 'GameController@prize');
+
+Route::get('allgame', 'GameController@allgame');
+
+
+
+
