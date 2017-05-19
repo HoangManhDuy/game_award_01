@@ -11,7 +11,7 @@
 |
 */
 
-Route::get('Duy/hoang', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
